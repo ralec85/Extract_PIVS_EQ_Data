@@ -70,6 +70,7 @@ Enter the following in command prompt
 Note: Downloading from multiple urls is possible. For example:
 
 To generate the earthquake data for January 2024 and February 2024, enter the following in command prompt:
+  
   python extractPIVSeqdata.py https://earthquake.phivolcs.dost.gov.ph/EQLatest-Monthly/2024/2024_January.html https://earthquake.phivolcs.dost.gov.ph/EQLatest-Monthly/2024/2024_February.html
 
 
