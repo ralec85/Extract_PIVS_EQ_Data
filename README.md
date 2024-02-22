@@ -69,9 +69,20 @@ Enter the following in command prompt
 
 Note: Downloading from multiple urls is possible. For example:
 
-To generate the earthquake data for January 2024 and February 2024, enter the following in command prompt:
+To generate the earthquake data for January 2024 and December 2023, enter the following in command prompt:
   
-  python extractPIVSeqdata.py https://earthquake.phivolcs.dost.gov.ph/EQLatest-Monthly/2024/2024_January.html https://earthquake.phivolcs.dost.gov.ph/EQLatest-Monthly/2024/2024_February.html
+  python extractPIVSeqdata.py https://earthquake.phivolcs.dost.gov.ph/EQLatest-Monthly/2024/2024_January.html https://earthquake.phivolcs.dost.gov.ph/EQLatest-Monthly/2023/2023_December.html
 
+If successful, the following should be returned in the command prompt:
 
+File created:  2024-01.txt
+1898 earthquake events extracted.
+Last record (check for inconsistencies):
+('PIVS202401000001', '2024-01-01 12:07:00', '120.73', '11.89', '026', '2.4', '2024', '01', '01', '12', '07', 'http://earthquake.phivolcs.dost.gov.ph//earthquake.phivolcs.dost.gov.ph/2023_Earthquake_Information/December/2023_1231_1607_B2.html')
 
+File created:  2023-12.txt
+4285 earthquake events extracted.
+Last record (check for inconsistencies):
+('PIVS202312000001', '2023-12-01 12:29:00', '121.86', '07.91', '026', '3.5', '2023', '12', '01', '12', '29', 'http://earthquake.phivolcs.dost.gov.ph/2023_Earthquake_Information/November/2023_1130_1629_B2.html')
+
+Note: The last record is shown to check wether the earthquake data has been extracted correctly. If the html parsing has failed, the last record will have missing attributes.
