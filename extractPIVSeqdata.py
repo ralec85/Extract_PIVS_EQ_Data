@@ -47,7 +47,7 @@ def extract_PIVS_eq_data(input):
         j=k*3 #for seis_all, which contains a list of longitude, depth, and magnitude
         
         eq_td_0 = seis_datetime[k].text.strip() #extracts the earthquake date and time as a string and removes leading and trailing whitespaces
-        eq_td_conv = datetime.strptime(eq_td_0, "%d %B %Y - %H:%M %p") #formats the eq date and time string as a datetime object
+        eq_td_conv = datetime.strptime(eq_td_0, "%d %B %Y - %I:%M %p") #formats the eq date and time string as a datetime object
         
         eq_url = seis_datetime[k]['href'] #extracts the PHIVOLCS earthquake information bulletin url
         eq_url = eq_url.replace('\\','/') #replaces backslash
